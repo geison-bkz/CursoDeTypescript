@@ -5,11 +5,12 @@
 // Plugin: Code Runner
 // npm i -g ts-node
 // ctrl + alt + n
+(() => {
+    console.log('npm install -g typescript');
 
-console.log('npm install -g typescript');
+    const pedido = (pedido: string) => {
+        return `Deu bom o seu pedido ${pedido}`;
+    };
 
-const pedido = (pedido: string) => {
-    return `Deu bom o seu pedido ${pedido}`;
-};
-
-console.log(pedido('123'));
+    console.log(pedido('123'));
+})();
